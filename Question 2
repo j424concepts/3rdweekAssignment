@@ -1,0 +1,15 @@
+fun main() {
+
+var output = "Good food"
+var reversed = reverse(output)
+println ("The reversed output is: $reversed")
+}
+
+fun reverse(output: String): String{
+    if(output.isEmpty())
+    return output
+    return reverse(output.substring(1)) + output[0]
+}
+//Programmer Ejuwede Michael
+//Class 1 Android
+//seat 35
